@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/show_payments"
+        android:title="Show Monthly Payments"/>
+
+    <item
+        android:id="@+id/advance"
+        android:title="Advance"/>
+
+    <item
+        android:id="@+id/monthly_payment"
+        android:title="Monthly Payment"/>
+
+    <item
+        android:id="@+id/pay"
+        android:title="Pay Today"/>
+
+    <item
+        android:id="@+id/attendance"
+        android:title="Show Attendance"/>
+
+</menu>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="@dimen/dimenEmployeeCardMarginTop"
+    android:layout_marginStart="@dimen/dimenEmployeeCardMarginStart"
+    android:layout_marginEnd="@dimen/dimenEmployeeCardMarginStart"
+    app:cardElevation="@dimen/dimenEmployeeCardElevation"
+    app:cardCornerRadius="@dimen/dimenEmployeeCardCornerRadius">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/user_image"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:padding="4dp"
+            android:src="@color/colorGridBackground"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/action_btns"/>
+
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:textSize="20sp"
+            android:singleLine="true"
+            android:textColor="@color/colorToolbarText"
+            android:text="John Clark"
+            app:layout_constraintStart_toEndOf="@id/user_image"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/user_role"/>
+
+        <TextView
+            android:id="@+id/user_role"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:textSize="14sp"
+            android:singleLine="true"
+            android:textColor="@color/colorHintDark"
+            android:text="Labourer"
+            app:layout_constraintStart_toEndOf="@id/user_image"
+            app:layout_constraintTop_toBottomOf="@id/user_name"
+            app:layout_constraintBottom_toTopOf="@id/user_wage"/>
+
+        <TextView
+            android:id="@+id/user_wage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:textSize="14sp"
+            android:singleLine="true"
+            android:textColor="@color/colorHintDark"
+            android:text="Wage : ₹ 150"
+            app:layout_constraintStart_toEndOf="@id/user_image"
+            app:layout_constraintTop_toBottomOf="@id/user_role"
+            app:layout_constraintBottom_toTopOf="@id/action_btns"/>
+
+        <LinearLayout
+            android:id="@+id/action_btns"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:paddingTop="2dp"
+            android:background="@color/colorLittleGrey"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+           <ImageView
+               android:id="@+id/call"
+               android:layout_width="wrap_content"
+               android:layout_height="match_parent"
+               android:layout_weight="1"
+               android:background="@color/colorWhite"
+               android:src="@drawable/ic_phone"
+               android:tint="@color/colorBtnCall"
+               android:padding="@dimen/dimenEmployeeCardBtnPadding"
+               android:layout_marginEnd="@dimen/dimenEmployeeCardBtnMargin"/>
+
+            <ImageView
+                android:id="@+id/edit"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@color/colorWhite"
+                android:layout_weight="1"
+                android:src="@drawable/ic_edit"
+                android:tint="@color/colorBtnEdit"
+                android:padding="@dimen/dimenEmployeeCardBtnPadding"
+                android:layout_marginEnd="@dimen/dimenEmployeeCardBtnMargin"/>
+
+            <ImageView
+                android:id="@+id/delete"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@color/colorWhite"
+                android:layout_weight="1"
+                android:src="@drawable/ic_delete"
+                android:tint="@color/colorBtnDelete"
+                android:padding="@dimen/dimenEmployeeCardBtnPadding"
+                android:layout_marginEnd="@dimen/dimenEmployeeCardBtnMargin"/>
+
+            <ImageView
+                android:id="@+id/info"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@color/colorWhite"
+                android:src="@drawable/ic_info"
+                android:tint="@color/colorBtnInfo"
+                android:padding="@dimen/dimenEmployeeCardBtnPadding"
+                android:layout_marginEnd="@dimen/dimenEmployeeCardBtnMargin"
+                android:layout_weight="1"/>
+
+            <ImageView
+                android:id="@+id/more"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@color/colorWhite"
+                android:src="@drawable/ic_more"
+                android:tint="@color/colorTint"
+                android:padding="@dimen/dimenEmployeeCardBtnPadding"
+                android:layout_weight="1"/>
+
+
+        </LinearLayout>
+
+    </android.support.constraint.ConstraintLayout>
+</android.support.v7.widget.CardView>

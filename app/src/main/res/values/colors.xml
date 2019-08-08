@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#3fb96b</color>
+    <color name="colorSubmitButton">#2ac41c</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorTint">#67252525</color>
+    <color name="colorToolbarText">#2e2d2d</color>
+    <color name="colorHintLight">#c9c9c9</color>
+    <color name="colorGridBackground">#d1d1d1</color>
+    <color name="colorDrawableTint">#585858</color>
+    <color name="colorHintDark">#696969</color>
+    <color name="colorBtnCall">#27ae60</color>
+    <color name="colorBtnEdit">#2980b9</color>
+    <color name="colorBtnDelete">#E01931</color>
+    <color name="colorBtnInfo">#249991</color>
+    <color name="colorLittleGrey">#d4d4d4</color>
+</resources>

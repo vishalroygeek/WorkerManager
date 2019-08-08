@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Worker Manager</string>
+    <string name="add_employee">Add Employee</string>
+    <string name="manage_employee">Manage Employees</string>
+    <string name="make_attendance">Make Attendance</string>
+    <string name="show_attendance">Show Attendance</string>
+    <string name="wages">Employee Wages</string>
+    <string name="daily_apyments">Daily Payments</string>
+    <string name="show_daily_payments">Show Daily Payments</string>
+    <string name="cashbook">Cashbook</string>
+    <string name="employee_type_prompt">Select Employee Type</string>
+    <string-array name="employee_type">
+        <item>Select Employee Type</item>
+        <item>Mechanic</item>
+        <item>Labourer</item>
+    </string-array>
+    <string name="mechanic_wage">Mechanic Wage</string>
+    <string name="labourer_wage">Labourer Wage</string>
+</resources>

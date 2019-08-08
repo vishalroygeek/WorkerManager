@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar
+    android:id="@+id/toolbar"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhite"
+    android:elevation="4dp">
+
+
+    <TextView
+        android:id="@+id/header_text_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginEnd="10dp"
+        android:text="WORKER"
+        android:textAllCaps="true"
+        android:textColor="@color/colorToolbarText"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/header_image"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_gravity="center"
+        android:layout_marginEnd="10dp"
+        android:src="@drawable/ic_hammer_wrench" />
+
+    <TextView
+        android:id="@+id/header_text_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="MANAGER"
+        android:textAllCaps="true"
+        android:textColor="@color/colorToolbarText"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+
+</android.support.v7.widget.Toolbar>

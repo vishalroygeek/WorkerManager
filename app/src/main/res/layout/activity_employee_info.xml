@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorGridBackground"
+    tools:context=".Activities.EmployeeInfoActivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar_layout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/ic_labor"
+            android:elevation="5dp"
+            app:civ_fill_color="@color/colorWhite"
+            app:civ_border_color="@color/colorPrimaryDark"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimenEditTextMargin"
+            android:layout_marginEnd="@dimen/dimenEditTextMargin"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edittext_shape_two"
+            android:drawableStart="@drawable/ic_person"
+            android:drawablePadding="10dp"
+            android:textColor="@color/colorToolbarText"
+            android:text="John Clark"
+            android:textSize="18sp"
+            android:padding="@dimen/dimenEditTextPadding"
+            app:layout_constraintTop_toBottomOf="@id/profile_image"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <TextView
+            android:id="@+id/number"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimenEditTextMargin"
+            android:layout_marginEnd="@dimen/dimenEditTextMargin"
+            android:layout_marginTop="10dp"
+            android:maxLength="10"
+            android:background="@drawable/edittext_shape_two"
+            android:drawableStart="@drawable/ic_phone"
+            android:drawablePadding="10dp"
+            android:textColor="@color/colorToolbarText"
+            android:text="845687625545"
+            android:textSize="18sp"
+            android:padding="@dimen/dimenEditTextPadding"
+            app:layout_constraintTop_toBottomOf="@id/name"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <TextView
+            android:id="@+id/employee_type"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimenEditTextMargin"
+            android:layout_marginEnd="@dimen/dimenEditTextMargin"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edittext_shape_two"
+            android:drawableStart="@drawable/ic_beenhere"
+            android:drawablePadding="10dp"
+            android:textColor="@color/colorToolbarText"
+            android:text="Labourer"
+            android:textSize="18sp"
+            android:padding="@dimen/dimenEditTextPadding"
+            app:layout_constraintTop_toBottomOf="@id/number"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <TextView
+            android:id="@+id/advance_amt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimenEditTextMargin"
+            android:layout_marginEnd="@dimen/dimenEditTextMargin"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edittext_shape_two"
+            android:drawableStart="@drawable/ic_monetization"
+            android:drawablePadding="10dp"
+            android:textColor="@color/colorToolbarText"
+            android:text="₹ 0"
+            android:textSize="18sp"
+            android:padding="@dimen/dimenEditTextPadding"
+            app:layout_constraintTop_toBottomOf="@id/employee_type"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <TextView
+            android:id="@+id/last_paid"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimenEditTextMargin"
+            android:layout_marginEnd="@dimen/dimenEditTextMargin"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edittext_shape_two"
+            android:drawableStart="@drawable/ic_monetization"
+            android:drawablePadding="10dp"
+            android:textColor="@color/colorToolbarText"
+            android:text="Last monthly payment : 5 Jun 2018"
+            android:textSize="18sp"
+            android:padding="@dimen/dimenEditTextPadding"
+            app:layout_constraintTop_toBottomOf="@id/advance_amt"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <TextView
+            android:id="@+id/date_joined"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimenEditTextMargin"
+            android:layout_marginEnd="@dimen/dimenEditTextMargin"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edittext_shape_two"
+            android:drawableStart="@drawable/ic_contact"
+            android:drawablePadding="10dp"
+            android:textColor="@color/colorToolbarText"
+            android:text="Addedd on 10 Jun 2018"
+            android:textSize="18sp"
+            android:padding="@dimen/dimenEditTextPadding"
+            app:layout_constraintTop_toBottomOf="@id/last_paid"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>

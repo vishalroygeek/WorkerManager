@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.MainActivity">
+
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_layout"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/colorGridBackground"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/add_employee"
+                android:layout_height="@dimen/dimenGridCardHeight"
+                android:layout_width="@dimen/dimenGridCardWidth"
+                android:layout_marginEnd="@dimen/dimenGridCardMargin"
+                android:layout_marginBottom="@dimen/dimenGridCardMarginBottom"
+                android:layout_column="0"
+                android:layout_row="0"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                app:cardElevation="@dimen/dimenGridCardElevation"
+                app:cardCornerRadius="@dimen/dimenGridCardCornerRadius">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="@dimen/dimenGridCardImage"
+                        android:layout_height="@dimen/dimenGridCardImage"
+                        android:layout_marginTop="@dimen/dimenGridCardImageMarginTop"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/ic_labor" />
+
+                    <TextView
+                        android:id="@+id/add_employee_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/add_employee"
+                        android:textColor="@color/colorToolbarText"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/dimenGridCardTextSize"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="@dimen/dimenGridCardImageMarginTop"
+                        android:layout_centerHorizontal="true"/>
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/manage_employee"
+                android:layout_height="@dimen/dimenGridCardHeight"
+                android:layout_width="@dimen/dimenGridCardWidth"
+                android:layout_marginBottom="@dimen/dimenGridCardMarginBottom"
+                android:layout_column="1"
+                android:layout_row="0"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                app:cardElevation="@dimen/dimenGridCardElevation"
+                app:cardCornerRadius="@dimen/dimenGridCardCornerRadius">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="@dimen/dimenGridCardImage"
+                        android:layout_height="@dimen/dimenGridCardImage"
+                        android:layout_marginTop="@dimen/dimenGridCardImageMarginTop"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/ic_employees" />
+
+                    <TextView
+                        android:id="@+id/manage_employee_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/manage_employee"
+                        android:textColor="@color/colorToolbarText"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/dimenGridCardTextSize"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="@dimen/dimenGridCardImageMarginTop"
+                        android:layout_centerHorizontal="true"/>
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/make_attendance"
+                android:layout_height="@dimen/dimenGridCardHeight"
+                android:layout_width="@dimen/dimenGridCardWidth"
+                android:layout_marginBottom="@dimen/dimenGridCardMarginBottom"
+                android:layout_marginEnd="@dimen/dimenGridCardMargin"
+                android:layout_column="0"
+                android:layout_row="1"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                app:cardElevation="@dimen/dimenGridCardElevation"
+                app:cardCornerRadius="@dimen/dimenGridCardCornerRadius">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="@dimen/dimenGridCardImage"
+                        android:layout_height="@dimen/dimenGridCardImage"
+                        android:layout_marginTop="@dimen/dimenGridCardImageMarginTop"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/ic_make_attendance" />
+
+                    <TextView
+                        android:id="@+id/make_attendance_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/make_attendance"
+                        android:textColor="@color/colorToolbarText"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/dimenGridCardTextSize"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="@dimen/dimenGridCardImageMarginTop"
+                        android:layout_centerHorizontal="true"/>
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/show_attendance"
+                android:layout_height="@dimen/dimenGridCardHeight"
+                android:layout_width="@dimen/dimenGridCardWidth"
+                android:layout_marginBottom="@dimen/dimenGridCardMarginBottom"
+                android:layout_column="1"
+                android:layout_row="1"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                app:cardElevation="@dimen/dimenGridCardElevation"
+                app:cardCornerRadius="@dimen/dimenGridCardCornerRadius">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="@dimen/dimenGridCardImage"
+                        android:layout_height="@dimen/dimenGridCardImage"
+                        android:layout_marginTop="@dimen/dimenGridCardImageMarginTop"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/ic_show_attendance" />
+
+                    <TextView
+                        android:id="@+id/show_attendance_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/show_attendance"
+                        android:textColor="@color/colorToolbarText"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/dimenGridCardTextSize"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="@dimen/dimenGridCardImageMarginTop"
+                        android:layout_centerHorizontal="true"/>
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/show_daily_payments"
+                android:layout_height="@dimen/dimenGridCardHeight"
+                android:layout_width="@dimen/dimenGridCardWidth"
+                android:layout_marginBottom="@dimen/dimenGridCardMarginBottom"
+                android:layout_marginEnd="@dimen/dimenGridCardMargin"
+                android:layout_column="0"
+                android:layout_row="2"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                app:cardElevation="@dimen/dimenGridCardElevation"
+                app:cardCornerRadius="@dimen/dimenGridCardCornerRadius">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="@dimen/dimenGridCardImage"
+                        android:layout_height="@dimen/dimenGridCardImage"
+                        android:layout_marginTop="@dimen/dimenGridCardImageMarginTop"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/ic_show_payments" />
+
+                    <TextView
+                        android:id="@+id/show_daily_payments_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/show_daily_payments"
+                        android:textColor="@color/colorToolbarText"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/dimenGridCardTextSize"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="@dimen/dimenGridCardImageMarginTop"
+                        android:layout_centerHorizontal="true"/>
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cashbook"
+                android:layout_height="@dimen/dimenGridCardHeight"
+                android:layout_width="@dimen/dimenGridCardWidth"
+                android:layout_marginBottom="@dimen/dimenGridCardMarginBottom"
+                android:layout_column="1"
+                android:layout_row="2"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                app:cardElevation="@dimen/dimenGridCardElevation"
+                app:cardCornerRadius="@dimen/dimenGridCardCornerRadius">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="@dimen/dimenGridCardImage"
+                        android:layout_height="@dimen/dimenGridCardImage"
+                        android:layout_marginTop="@dimen/dimenGridCardImageMarginTop"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/ic_note" />
+
+                    <TextView
+                        android:id="@+id/cashbook_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/cashbook"
+                        android:textColor="@color/colorToolbarText"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/dimenGridCardTextSize"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="@dimen/dimenGridCardImageMarginTop"
+                        android:layout_centerHorizontal="true"/>
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+        </GridLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

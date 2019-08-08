@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <corners
+        android:topLeftRadius="@dimen/dimenEditTextCorner"
+        android:topRightRadius="@dimen/dimenEditTextCorner"
+        android:bottomLeftRadius="@dimen/dimenEditTextCorner"
+        android:bottomRightRadius="@dimen/dimenEditTextCorner"/>
+
+    <solid android:color="@color/colorWhite"/>
+
+</shape>

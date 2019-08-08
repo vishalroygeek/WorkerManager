@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorGridBackground">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:elevation="4dp">
+        <TextView
+            android:id="@+id/header_text_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginEnd="10dp"
+            android:text="ADD RECORD"
+            android:textAllCaps="true"
+            android:textColor="@color/colorToolbarText"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+        <ImageView
+            android:id="@+id/close"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_cancel"
+            android:layout_marginEnd="10dp"
+            android:layout_gravity="end|center_vertical"/>
+    </android.support.v7.widget.Toolbar>
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="@dimen/dimenEditTextMargin"
+        android:layout_marginEnd="@dimen/dimenEditTextMargin"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edittext_shape_two"
+        android:inputType="textPersonName|textCapWords"
+        android:drawableStart="@drawable/ic_person"
+        android:hint="Client Name"
+        android:textColorHint="@color/colorHintDark"
+        android:drawablePadding="10dp"
+        android:textColor="@color/colorToolbarText"
+        android:textSize="18sp"
+        android:padding="@dimen/dimenEditTextPadding"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <EditText
+        android:id="@+id/amount"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="@dimen/dimenEditTextMargin"
+        android:layout_marginEnd="@dimen/dimenEditTextMargin"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edittext_shape_two"
+        android:inputType="number"
+        android:drawableStart="@drawable/ic_monetization"
+        android:hint="Amount"
+        android:textColorHint="@color/colorHintDark"
+        android:drawablePadding="10dp"
+        android:textColor="@color/colorToolbarText"
+        android:textSize="18sp"
+        android:padding="@dimen/dimenEditTextPadding"
+        app:layout_constraintTop_toBottomOf="@id/name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <EditText
+        android:id="@+id/description"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimenEditTextMargin"
+        android:layout_marginEnd="@dimen/dimenEditTextMargin"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edittext_shape_two"
+        android:inputType="textMultiLine"
+        android:drawableStart="@drawable/ic_featured_play_list"
+        android:hint="Enter description"
+        android:textColorHint="@color/colorHintDark"
+        android:drawablePadding="10dp"
+        android:textColor="@color/colorToolbarText"
+        android:textSize="18sp"
+        android:padding="@dimen/dimenEditTextPadding"
+        app:layout_constraintTop_toBottomOf="@id/amount"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:background="@color/colorSubmitButton"
+        android:text="Submit"
+        android:textColor="@color/colorWhite"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</android.support.constraint.ConstraintLayout>
